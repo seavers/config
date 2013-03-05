@@ -6,6 +6,9 @@ personal config backup
 #git
     cd ~/.ssh
     ssh-keygen -t rsa -C "your_email@example.com"
+    ##copy ~/.ssh/id_rsa.pub to github.com
+    sudo apt-get install xclip
+    xclip -sel clip < ~/.ssh/id_rsa.pub
     
 #nginx.conf
     wget https://raw.github.com/seavers/config/master/nginx.conf -o /usr/local/nginx/conf/nginx.conf
