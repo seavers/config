@@ -32,8 +32,10 @@ personal config backup
 #apache.conf
     wget https://raw.github.com/seavers/config/master/apache2.conf -o /etc/apache2/apache2.conf
 
-
-
+#samba
+    sudo apt-get install samba
+    sudo wget https://raw.github.com/seavers/config/master/smb.conf -o /etc/samba/smb.conf
+    sudo restart smbd & sudo restart nmbd
 
 
 
